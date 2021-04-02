@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html>は決まり文句でどのバージョン(HTML5)で記載されているかを示す-->
+<!DOCTYPE html>
+<!--<html>タグは完全に決まり文句。ここはhtmlで書かれているということを示す-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--以下は端末の幅に合わせるという意味の決まり文句-->
+    <meta name="viewport" content="width=device-width">
+    <!--以下はタブの表示名。基本的にはh1タグと同名になることが多い-->
+    <title>入会申し込み</title>
+
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/04.style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>入会申し込み</h1>
+        <p>入会するには、次のフォームに必要事項をご記入ください</p>
+        <div class="control">
+            <label for="mymail">メールアドレス <span class="required">必須</span></label>
+            <input id="mymail" type="email" name= "mymail">
+        </div>
+        <div class="control">
+            <label for="password">パスワード <span class="required">必須</span> </label>
+            <input id="password" type="password" name= "password">
+        </div>
+        <div class="control">
+            <button type="submit">送信</button>
+        </div>
+        
+    </div>
+</body>
+</html>
